@@ -1,0 +1,46 @@
+name: AI DevSecOps Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: python
+
+      - name: Analyze Code
+        uses: github/codeql-action/analyze@v3
+
+      - name: Run App Test
+        run: |
+          python app/app.py &
+          sleep 5
+          curl http://localhost:5000
+
+      - name: AI Step
+        run: echo "AI will be added here"
+
+      - name: Build Docker
+        run: docker build -t ai-devsecops .
+
+      - name: Done
+        run: echo "Pipeline Completed 🚀"
