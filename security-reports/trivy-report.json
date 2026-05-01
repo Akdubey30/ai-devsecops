@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Outdated Flask Package Vulnerability",
+    "severity": "High",
+    "file": "requirements.txt"
+  },
+  {
+    "title": "Vulnerable OpenSSL Dependency",
+    "severity": "Critical",
+    "file": "Dockerfile"
+  },
+  {
+    "title": "Low Severity Base Image Issue",
+    "severity": "Low",
+    "file": "python:3.9-slim"
+  }
+]

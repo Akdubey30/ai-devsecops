@@ -1,0 +1,20 @@
+[
+  {
+    "title": "SQL Injection Risk",
+    "severity": "Critical",
+    "file": "src/app.py",
+    "line": 22
+  },
+  {
+    "title": "Hardcoded Secret Found",
+    "severity": "High",
+    "file": "src/config.py",
+    "line": 8
+  },
+  {
+    "title": "Debug Mode Enabled",
+    "severity": "Medium",
+    "file": "src/server.py",
+    "line": 45
+  }
+]

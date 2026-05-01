@@ -1,0 +1,9 @@
+[
+  {"code": "eval(input())", "label": "HIGH"},
+  {"code": "os.system('rm -rf /')", "label": "HIGH"},
+  {"code": "subprocess.call(cmd)", "label": "HIGH"},
+  {"code": "password = input()", "label": "MEDIUM"},
+  {"code": "open('file.txt')", "label": "MEDIUM"},
+  {"code": "print('hello')", "label": "LOW"},
+  {"code": "a = 5 + 2", "label": "LOW"}
+]

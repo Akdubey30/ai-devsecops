@@ -1,0 +1,34 @@
+{
+    "findings": [
+        {
+            "Level": "Level 1 - Static AI",
+            "Issue": "Hardcoded Password",
+            "Severity": "High",
+            "Recommendation": "Avoid insecure pattern and use safer validated alternatives."
+        },
+        {
+            "Level": "Level 1 - Static AI",
+            "Issue": "Command Injection Risk",
+            "Severity": "Critical",
+            "Recommendation": "Avoid insecure pattern and use safer validated alternatives."
+        },
+        {
+            "Level": "Level 1 - Static AI",
+            "Issue": "Debug Mode Enabled",
+            "Severity": "Medium",
+            "Recommendation": "Avoid insecure pattern and use safer validated alternatives."
+        },
+        {
+            "Level": "Level 2 - Context AI",
+            "Issue": "User Input Reaches Sensitive Function",
+            "Severity": "Critical",
+            "Recommendation": "Sanitize input and avoid direct execution."
+        }
+    ],
+    "risk_engine": {
+        "Level": "Level 3 - AI Risk Engine",
+        "Risk Score": 100,
+        "Risk Status": "Critical",
+        "Decision": "Deployment should be blocked."
+    }
+}
