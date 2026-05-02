@@ -4,7 +4,7 @@
 
 This project is an AI-enhanced DevSecOps pipeline that integrates security checks and AI-based vulnerability prediction into the software development lifecycle.
 
-In a traditional DevOps pipeline, code is built, tested, and deployed automatically. However, security checks are often performed late in the development process. This project improves the process by adding security analysis and AI-based decision-making before deployment.
+In a traditional DevOps pipeline, code is built, tested, and deployed automatically. However, security checks are often performed late in the development process. This project improves the process by adding security analysis and AI-based decision-making before deployment. This is just a demo
 
 The main goal of this project is to check whether the code is safe enough to be deployed.
 
